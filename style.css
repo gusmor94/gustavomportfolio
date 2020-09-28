@@ -43,6 +43,7 @@ header a {
 header nav {
     margin: 7px 0;
 }
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -140,5 +141,84 @@ header nav ul li a:hover {
     background-size: cover;
 }
 
+.contact-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
+.contact-grid-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 0 40px 0;
+}
+
+.contact-grid-item {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-grid-item a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .item1 {
+        grid-column: 1/-1;
+    }
+}
 
