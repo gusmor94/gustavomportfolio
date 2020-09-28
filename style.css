@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #030398; 
+    --secondary-color: #95b5c4; 
+    --tertiary-color: #87ceeb;     
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #f7f7f7;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-style: italic;
+    border-radius: 30px 15px;
+}
+
+.hero {
+    background-image: url(./images/hero-img.jpg);
+    background-size: cover;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero div {
+    height: 500px;
+    width: 80%;
+}
+
+.section-title {
+    font-size: 48px;
+    color: var(--primary-color);
+    border-bottom: 3px solid;
+    text-align: center;
+    margin: 20px auto 35px auto;
+    width: 30%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.intro p {
+    line-height: 1.7;
+    width: 80%;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.grid-container {
+    width: 80%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+    padding: 50px 0;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://via.placeholder.com/150");
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+.grid-item h3, h4 {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.grid-item:hover h3, .grid-item:hover h4 {
+    opacity: 1;
+}
+
+.item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(./images/050-mock-up\ copy.jpg);
+    background-size: cover;
+}
+
+
+
