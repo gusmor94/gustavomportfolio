@@ -141,6 +141,26 @@ header nav ul li a:hover {
     background-size: cover;
 }
 
+.item2 {
+    background-image: url(./images/generate-password-screenshot.png);
+    background-size: cover;
+}
+
+.item3 {
+    background-image: url(./images/work-day-scheduler.png);
+    background-size: cover;
+}
+
+.item4 {
+    background-image: url(./images/weather-dashboard-screenshot.png);
+    background-size: cover;
+}
+
+.item5 {
+    background-image: url(./images/trein-desktop-screenshot.png);
+    background-size: cover;
+}
+
 .contact-grid-wrapper {
     display: flex;
     width: 100%;
